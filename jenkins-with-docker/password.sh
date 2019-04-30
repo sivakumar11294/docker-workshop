@@ -1,4 +1,1 @@
-docker exec -it jenkins-docker bash
-cd var/jenkins_home/secrets
-cat initialAdminPassword
-exit
+ docker exec jenkins-docker /bin/sh -c "cd var/jenkins_home/secrets && cat initialAdminPassword"
